@@ -2,12 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MemeGigs</title>
+    <title>Document</title>
+    <link rel="icon" href="bepislogo.png">
+    <script>
+        let colors = ['red','pink','coral','orange','yellow','green'];
+        let colInx = 0;
+        (function changeColor(){
+          document.querySelector("#p").style.backgroundColor = colors[colInx++%colors.length];
+          setTimeout(changeColor, 1000);
+        })();
+    </script>
+    <style>
+        body{
+            background-image: url(bupis2.gif);
+            background-position: center;
+            background-color: seagreen;
+        }
+        .list__link{
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            display: block;
+            background-image: url(bepislogo.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 80%;
+            background-repeat: no-repeat;
+        }
+        .list__item{
+            list-style: none;
+        }
+        .list{
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 400px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <h1><center>MemeGigs ver1.0</center></h1>
-    <h2><center>We cant find page :(</center></h2>
-    <p><center>Please help our to find page!</center></p>
+    <a href="http://google.com" target="_blank">Yandex :)</a>
+    <a href="tel:+79999999999">Акция</a>
+    <a href="mailto:bepus_official@gmail.com">koffi</a>
+    <div class="box">
+        <ul class="list">
+            <li class="list__item">
+                <a target="_blank" href="https://preview.redd.it/51tg905dyuw31.png?auto=webp&s=5bf1824e70ce7f39dd5536cf33b6f7a0bbe8d21d" class="list__link"></a>
+            </li>
+            <li class="list__item">
+                <a target="_blank" href="https://i.imgflip.com/3c7rsy.png" class="list__link"></a>
+            </li>
+            <li class="list__item">
+                <a target="_blank" href="https://i.makeagif.com/media/10-11-2021/c7IBbo.gif" class="list__link"></a>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
