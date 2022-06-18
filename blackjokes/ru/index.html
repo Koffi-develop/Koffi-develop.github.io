@@ -5,12 +5,19 @@ Ooops! Need Javascript
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-var random_int = getRandomInt(2);
+var random_int = getRandomInt(5);
 
 if (random_int === 0) {
    document.write("Знаете почему сперма дороже крови? Потому что это ручная работа!")
-} else {
-   document.write("Приходит гей в магазин и говорит продавцу что бы он продал ему колбасу, а продавец спрашивает вам нарезать? Гей отвечает: Я что блять копилка? ")
+} else if (random_int === 1) {
+   document.write("Приходит гей в магазин и говорит продавцу что бы он продал ему колбасу, а продавец спрашивает вам нарезать? \n Гей отвечает: Я что блять копилка? ")
+} else if (random_int === 2) {
+  document.write("Гроб карлика-оптимиста наполовину полон. ")
+} else if (random_int === 3) {
+  document.write("Смотрел недавно открытие Параолимпиады. \nВсё хорошо, но, глядя на спортсменов, не отпускала мысль: Чего-то не хватает... ")
+} else if (random_int === 4) {
+  document.write("— Говорят, одна беда на двоих - это пол беды. \n— Жаль, но со спидом это немного по-другому работает. ")
 }
 
+ 
 </script>
